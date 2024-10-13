@@ -74,12 +74,6 @@ def main():
     decrypted_result = encrypted_result.decrypt()[0]
     
     print(f"\nDecrypted result (average blood pressure): {decrypted_result:.2f}")
-    print(f"Actual average (for comparison): {np.mean(sensitive_data):.2f}")
-    
-    print("\nVerifying the result:")
-    print(f"  Original data: {sensitive_data}")
-    print(f"  Sum of original data: {sum(sensitive_data)}")
-    print(f"  Average of original data: {sum(sensitive_data) / len(sensitive_data):.2f}")
 
 # Direct calculation function
 def direct_calculation():
